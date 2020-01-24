@@ -17,7 +17,23 @@ In order to create a shorter or longer array, we need to create a new array and 
 6. How are duplicates removed from a given array in Java?
 7. How is an integer array sorted in place using the quicksort algorithm?
 8. How do you remove duplicates from an array in place?
-9. How do you reverse an array in place in Java?
+9. How do you reverse an array of elements?
+    1. Create empty array object.
+    2. Get the last index number of base array.
+    3. Loop through base array from last index till O index.
+    4. Add base array last index value to new empty array start from first index.
+```javascipt
+function reverseArray(array) {
+    let newArray = [];
+    let indexToRead = array.length - 1;
+    for (let i = indexToRead; i >= 0; i--) {
+        newArray.push(array[i]);
+    }
+    return newArray;
+};
+
+reverseArray([10, 20, 30, 40, 50]);
+```
 10. How are duplicates removed from an array without using any library?
 
 ## Reference
