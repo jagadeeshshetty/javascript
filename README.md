@@ -32,8 +32,8 @@ In order to create a shorter or longer array, we need to create a new array and 
         return newArray;
     };
 
-reverseArray([10, 20, 30, 40, 50]);
-```
+    reverseArray([30, 40, 50, 60, 70, 80, 90]);
+    ```
 10. How are duplicates removed from an array without using any library?
 
 ## Reference

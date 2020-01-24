@@ -14,4 +14,4 @@ function reverseArray(array) {
     return newArray;
 };
 
-console.log(reverseArray([10, 20, 30, 40, 50]));
+console.log(reverseArray([30, 40, 50, 60, 70, 80, 90]));
