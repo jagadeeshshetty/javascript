@@ -22,15 +22,15 @@ In order to create a shorter or longer array, we need to create a new array and 
     2. Get the last index number of base array.
     3. Loop through base array from last index till O index.
     4. Add base array last index value to new empty array start from first index.
-```javascript
-function reverseArray(array) {
-    let newArray = [];
-    let indexToRead = array.length - 1;
-    for (let i = indexToRead; i >= 0; i--) {
-        newArray.push(array[i]);
-    }
-    return newArray;
-};
+    ```javascript
+    function reverseArray(array) {
+        let newArray = [];
+        let indexToRead = array.length - 1;
+        for (let i = indexToRead; i >= 0; i--) {
+            newArray.push(array[i]);
+        }
+        return newArray;
+    };
 
 reverseArray([10, 20, 30, 40, 50]);
 ```
