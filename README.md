@@ -1,4 +1,3 @@
-
 # Covers DS and Algorithms in Javascript
 
 An array is the most fundamental data structure, which stores elements at a contiguous memory location. We can solve reversing an array, sorting the array, or searching elements on the array etc
@@ -17,23 +16,46 @@ In order to create a shorter or longer array, we need to create a new array and 
 6. How are duplicates removed from a given array in Java?
 7. How is an integer array sorted in place using the quicksort algorithm?
 8. How do you remove duplicates from an array in place?
-9. How do you reverse an array of elements?
-    1. Create empty array object.
-    2. Get the last index number of base array.
-    3. Loop through base array from last index till O index.
-    4. Add base array last index value to new empty array start from first index.
-    ```javascript
-    function reverseArray(array) {
-        let newArray = [];
-        let indexToRead = array.length - 1;
-        for (let i = indexToRead; i >= 0; i--) {
-            newArray.push(array[i]);
-        }
-        return newArray;
-    };
 
-    reverseArray([30, 40, 50, 60, 70, 80, 90]);
-    ```
+   1. Create empty array object.
+   2. Get the length of base array.
+   3. Loop through base array elements.
+   4. Check element present in new array.
+      Note: indexOf() returns 0 if element present and -1 if not.
+
+   ```javascript
+   function removeDuplicates(array) {
+     let newArray = [];
+     let len = array.length;
+     for (let i = 0; i < len; i++) {
+       if (newArray.indexOf(array[i]) === -1) newArray.push(array[i]);
+     }
+     return newArray;
+   }
+
+   removeDuplicates([30, 30, 40, 50, 60, 70, 70, 80, 90]);
+   ```
+
+9. How do you reverse an array of elements?
+
+   1. Create empty array object.
+   2. Get the last index number of base array.
+   3. Loop through base array from last index till O index.
+   4. Add base array last index value to new empty array start from first index.
+
+   ```javascript
+   function reverseArray(array) {
+     let newArray = [];
+     let indexToRead = array.length - 1;
+     for (let i = indexToRead; i >= 0; i--) {
+       newArray.push(array[i]);
+     }
+     return newArray;
+   }
+
+   reverseArray([30, 40, 50, 60, 70, 80, 90]);
+   ```
+
 10. How are duplicates removed from an array without using any library?
 
 ## Reference
