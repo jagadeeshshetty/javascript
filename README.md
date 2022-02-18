@@ -16,7 +16,11 @@ All about Javascript datastructures.
 
 ## Run
 
+**All with Code coverage report**
 `npm run test:coverage:report`
+
+**Single Test**
+`./node_modules/.bin/_mocha test/algorithms/sorting/`
 
 ---
 

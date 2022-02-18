@@ -10,7 +10,7 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       // "program": "${workspaceFolder}/core/recursion.js"
-      "program": "${workspaceFolder}/hacker_rank/day-3-try-catch-finally.js"
+      "program": "${workspaceFolder}/src/algorithms/sorting/bubble_sort.js"
     }
   ]
 }
