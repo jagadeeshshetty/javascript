@@ -20,7 +20,8 @@ All about Javascript datastructures.
 `npm run test:coverage:report`
 
 **Single Test**
-`./node_modules/.bin/_mocha test/algorithms/sorting/`
+macOS: `./node_modules/.bin/_mocha test/algorithms/sorting/`
+Windows: `npm run test:single .\test\algorithms\sorting\`
 
 ---
 
