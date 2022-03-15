@@ -21,7 +21,7 @@ All about Javascript datastructures.
 
 **Single Test**
 macOS: `./node_modules/.bin/_mocha test/algorithms/sorting/`
-Windows: `npm run test:single .\test\algorithms\sorting\`
+Windows: `npm run test:single .\test\algorithms\sorting\bubble_sort.test.js`
 
 ---
 
