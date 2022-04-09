@@ -10,7 +10,7 @@
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
       // "program": "${workspaceFolder}/core/recursion.js"
-      "program": "${workspaceFolder}/src/algorithms/reverse_word.js"
+      "program": "${workspaceFolder}/src/algorithms/search/linearSearch.js"
     }
   ]
 }
