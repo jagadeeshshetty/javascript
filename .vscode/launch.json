@@ -9,8 +9,22 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      // "program": "${workspaceFolder}/core/recursion.js"
       "program": "${workspaceFolder}/src/algorithms/search/linearSearch.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Mocha Tests",
+      "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--require",
+        "ts-node/register",
+        "--timeout",
+        "999999",
+        "--colors",
+        "${workspaceFolder}/test/algorithms/search/binarySearch.test.js"
+      ],
+      "internalConsoleOptions": "openOnSessionStart"
     }
   ]
 }
